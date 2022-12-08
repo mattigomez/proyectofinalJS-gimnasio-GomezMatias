@@ -11,7 +11,13 @@ if(userFound){
     window.location.href="./ejercicios.html"
 }
 else{
-    document.querySelector("#mensaje").innerText= "Usuario y/o contraseña incorrecta";
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Usuario y/o contraseña incorrecta!',
+       
+      })
+  
 }
     return userFound;
 }

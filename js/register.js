@@ -44,4 +44,11 @@ btnRegistrar.addEventListener("click",(e)=>{
     guardarUsuario(newUser);
     limpiarCampos();
     guardarEnStorage(usuarios);
+    Swal.fire(
+        'Registro Exitoso!',
+        'Toca OK para continuar!',
+        'success'
+      ).then(()=> {
+        window.location = "index.html";
+    });
 });
